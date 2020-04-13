@@ -71,7 +71,7 @@ def AGDL(data, targetClusterNum, Ks, Kc):
         length += len(cluster[i])
 
     print("data before clustering : ", length)
-    W = w_matrix(data, distance, indices, Ks)
+    W,_ = w_matrix(data, distance, indices, Ks)
     print("neighbor")
     neighborSet, affinitySet = getNeighbor(cluster, Kc, W)
     currentClusterNum = len(cluster)
