@@ -1,5 +1,5 @@
 import numpy as np
-from knn import *
+from GDL.knn import *
 import time
 from scipy.misc import *
 
