@@ -1,7 +1,7 @@
 import numpy as np
 from GDL.knngraph import *
-from GDL.loadData import *
-from GDL.measure import *
+# from GDL.loadData import *
+# from GDL.measure import *
 
 
 
@@ -189,22 +189,22 @@ def AGDL(data, targetClusterNum, Ks, Kc):
 
 
 
-if __name__ == '__main__':
-    data, labels, CLUSTER_NUMBER = load_coil20()
-    n = np.arange(-2,2.1,0.5)
+# if __name__ == '__main__':
+#     data, labels, CLUSTER_NUMBER = load_coil20()
+#     n = np.arange(-2,2.1,0.5)
 
-    for a in n:
-        print(n)
-        Ks = 20
-        Kc = 10
-        cluster = AGDL(data, CLUSTER_NUMBER, Ks, Kc)
+#     for a in n:
+#         print(n)
+#         Ks = 20
+#         Kc = 10
+#         cluster = AGDL(data, CLUSTER_NUMBER, Ks, Kc)
 
-        labels_pred = np.zeros(len(labels), dtype='i')
+#         labels_pred = np.zeros(len(labels), dtype='i')
 
-        for i in range(len(cluster)):
-            for j in range(len(cluster[i])):
-                labels_pred[cluster[i][j]] = i
+#         for i in range(len(cluster)):
+#             for j in range(len(cluster[i])):
+#                 labels_pred[cluster[i][j]] = i
 
-        #ACC_sf.append(ACC(labels, labels_pred))
-        print(ACC(labels, labels_pred))
+#         #ACC_sf.append(ACC(labels, labels_pred))
+#         print(ACC(labels, labels_pred))
 
