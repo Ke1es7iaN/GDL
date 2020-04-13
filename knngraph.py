@@ -3,7 +3,7 @@ from knn import *
 import time
 from scipy.misc import *
 
-def w_matrix(data, distance, indices, Ks, a):
+def w_matrix(data, distance, indices, Ks, a=1):
 
     n = len(data)
 
@@ -25,7 +25,7 @@ def w_matrix(data, distance, indices, Ks, a):
 
     return weight_matrix, sigma2
 
-def k0graph(X,distance,indices, a):
+def k0graph(X,distance,indices, a=1):
 
     W, sigma2 = w_matrix(X, distance, indices, 1, a)
 
