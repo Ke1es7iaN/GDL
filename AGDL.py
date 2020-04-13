@@ -1,7 +1,7 @@
 import numpy as np
-from knngraph import *
-from loadData import *
-from measure import *
+from GDL.knngraph import *
+from GDL.loadData import *
+from GDL.measure import *
 
 
 
