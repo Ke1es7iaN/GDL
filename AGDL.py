@@ -61,7 +61,7 @@ def getNeighbor(Vc, Kc, W):
     return Ns,As
 
 
-def AGDL(data, targetClusterNum, Ks=20, Kc=10):
+def AGDL(data, targetClusterNum, Ks=20, Kc=5):
     print("data length : ", len(data))
     distance, indices = knn(Ks, data)
 
